@@ -1,7 +1,7 @@
 package constant
 
 const (
-	ApiUrl                    = "http://localhost:8090/api"
+	ApiUrl                    = "http://pre-master-tool.chiennn.me/api"
 	MaxAccountConcurrent      = 10
 	MaxRetryGetTask           = 3
 	MaxProcessByDay           = 20
