@@ -96,7 +96,7 @@ func (b biz) RunProcess() {
 	log.Infof("SleepBetweenSearch : %vs", constant.SecondSleepBetweenSearch)
 
 	i := 1
-	numGetDataFalse := 1
+	numGetDataFalse := 0
 
 	for {
 		log.Infof("Run Process %v", i)
@@ -118,7 +118,6 @@ func (b biz) RunProcess() {
 		}
 
 		log.Infof("Done Process %v", i)
-		log.Infof("numGetDataFalse %v", numGetDataFalse)
 
 		if numGetDataFalse == constant.MaxRetryGetTask {
 			break
