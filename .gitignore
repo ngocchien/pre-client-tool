@@ -1,0 +1,5 @@
+.idea
+static/uploads/*
+static/captcha/*
+development
+production
