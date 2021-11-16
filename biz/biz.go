@@ -117,12 +117,13 @@ func (b biz) RunProcess() {
 			wg.Wait()
 		}
 
+		log.Infof("Done Process %v", i)
+
 		if numGetDataFalse == constant.MaxRetryGetTask {
 			break
 		}
 
 		time.Sleep(constant.SecondSleepBetweenProcess * time.Second)
-		log.Infof("Done Process %v", i)
 
 		i += 1
 	}
