@@ -118,6 +118,7 @@ func (b biz) RunProcess() {
 		}
 
 		log.Infof("Done Process %v", i)
+		log.Infof("numGetDataFalse %v", numGetDataFalse)
 
 		if numGetDataFalse == constant.MaxRetryGetTask {
 			break
